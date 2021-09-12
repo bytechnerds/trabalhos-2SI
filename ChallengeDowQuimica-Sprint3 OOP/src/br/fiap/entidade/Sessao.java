@@ -1,57 +1,115 @@
 package br.fiap.entidade;
 
+import java.util.Date;
+import java.util.Random;
+
 public class Sessao {
 	private int id_sessao;
-	private String data_acesso;
-	private String duracao;
-	private TipoFuncoes funcoes;
-	
-	
-	public Sessao(int id_sessao, String data_acesso, String duracao, TipoFuncoes funcoes) {
-		super();
+	private Date data_acesso;
+	private int duracao;
+	private String funcoes;
+	private int id_site;
+	private int id_usuario;
+
+//	public Sessao(int id_sessao, Date data_acesso, int duracao, String funcoes) {
+//		this.id_sessao = id_sessao;
+//		this.data_acesso = data_acesso;
+//		this.duracao = duracao;
+//		this.funcoes = funcoes;
+//	}
+
+	public Sessao(int id_sessao, Date data_acesso, int duracao, String funcoes, int id_site, int id_usuario) {
 		this.id_sessao = id_sessao;
 		this.data_acesso = data_acesso;
 		this.duracao = duracao;
 		this.funcoes = funcoes;
+		this.id_site = id_site;
+		this.id_usuario = id_usuario;
 	}
-
 
 	public int getId_sessao() {
 		return id_sessao;
 	}
 
-
-	public void setId_sessao(int id_sessao) {
+	public void setId_sessao() {
+		Random random = new Random();
+		int id_sessao = random.nextInt(10000) + 1000;
 		this.id_sessao = id_sessao;
 	}
 
-
-	public String getData_acesso() {
+	public Date getData_acesso() {
 		return data_acesso;
 	}
 
+	public void setData_acesso() {
+		Date data = new Date();
 
-	public void setData_acesso(String data_acesso) {
-		this.data_acesso = data_acesso;
+		this.data_acesso = data;
 	}
 
-
-	public String getDuracao() {
+	public int getDuracao() {
 		return duracao;
 	}
 
+	public String getDuracaoFormatada(int duracao) {
+		String tempo = "";
 
-	public void setDuracao(String duracao) {
-		this.duracao = duracao;
+		int segundos = duracao;
+		int seg = segundos % 60;
+		int minutos = segundos / 60;
+		int min = minutos % 60;
+		int hora = minutos / 60;
+
+		tempo = "A sessão durou:  " + hora + " horas, " + min + " minutos, " + seg + " segundos.";
+		return tempo;
 	}
 
+	public void setDuracao() {
+		Random random = new Random();
+		int numero = random.nextInt(86401);
 
-	public TipoFuncoes getFuncoes() {
+		this.duracao = numero;
+	}
+
+	public String contaFuncoes(int cont1, int cont2, int cont3, int cont4, int cont5, int cont6, int cont7) {
+		String contagem = "";
+
+		contagem += "CONTAGEM DE FUNÇÕES\n\n";
+		contagem += "FUNÇÃO DESCREVER 			 			-  " + cont1 + "\n";
+		contagem += "FUNÇÃO NARRAÇÃO        		 		-  " + cont2 + "\n";
+		contagem += "FUNÇÃO NAVEGAÇÃO POR BLOCOS  			-  " + cont3 + "\n";
+		contagem += "FUNÇÃO NAVEGAÇÃO POR BOTÕES  			-  " + cont4 + "\n";
+		contagem += "FUNÇÃO NAVEGAÇÃO POR MÍDIAS  			-  " + cont5 + "\n";
+		contagem += "FUNÇÃO NAVEGAÇÃO POR IMAGENS 			-  " + cont6 + "\n";
+		contagem += "FUNÇÃO NAVEGAÇÃO POR ENTRADA DE DADOS	-  " + cont7 + "\n";
+
+		return contagem;
+	}
+
+	public String getFuncoes() {
 		return funcoes;
 	}
 
+	public void setFuncoes(String contagem) {
+		this.funcoes = contagem;
+	}
 
-	public void setFuncoes(TipoFuncoes funcoes) {
-		this.funcoes = funcoes;
-	}	
+	public int getId_site() {
+		return id_site;
+	}
+
+	public void setId_site(Site id_site) {
+		this.id_site = id_site.getId_site();
+	}
+
+	public int getId_usuario() {
+		return id_usuario;
+	}
+
+	public void setId_usuario(Usuario id_usuario) {
+		
+		this.id_usuario = id_usuario.getId_usuario();
+		
+	}
+
 }

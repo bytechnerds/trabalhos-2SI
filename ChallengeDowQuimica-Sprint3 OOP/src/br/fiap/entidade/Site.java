@@ -1,5 +1,7 @@
 package br.fiap.entidade;
 
+import java.util.Random;
+
 public class Site {
 	private int id_site;
 	private String uri;
@@ -19,8 +21,10 @@ public class Site {
 	}
 
 
-	public void setId_site(int id_site) {
-		this.id_site = id_site;
+	public void setId_site() {
+		Random random = new Random();
+		int numero = random.nextInt(10000);
+		this.id_site = numero;
 	}
 
 

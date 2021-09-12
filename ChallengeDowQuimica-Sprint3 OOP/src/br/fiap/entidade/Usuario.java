@@ -14,26 +14,21 @@ public class Usuario {
 	public Usuario(int id_usuario, String nome, String email, String senha, TipoNavegador navegador,
 			TipoDeficiencia deficiencia_visual) {
 		super();
-		this.id_usuario = gerarId_usuario();
+		this.id_usuario = id_usuario;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 		this.navegador = navegador;
 		this.deficiencia_visual = deficiencia_visual;
 	}
-
-	public int gerarId_usuario() {
-		Random random = new Random();
-		int numero = random.nextInt(10000);
-		return numero;
-		
-	}
+	
 	public int getId_usuario() {
 		return id_usuario;
 	}
 
-
-	public void setId_usuario(int numero) {
+	public void setId_usuario() {
+		Random random = new Random();
+		int numero = random.nextInt(10000);
 		this.id_usuario = numero;
 	}
 

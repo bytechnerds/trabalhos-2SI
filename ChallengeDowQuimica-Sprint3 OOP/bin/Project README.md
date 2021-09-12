@@ -1,0 +1,13 @@
+SPRINT 3 - OOP (CHALLENGE DOW QUÍMICA)
+
+DESCIÇÃO DO TRABALHO:
+Nesta etapa a sua equipe deverá trabalhar com a linguagem Java e aceso a banco de dados. A equipe deverá:
+		-- Criar um projeto Java.
+		-- Escolher pelo menos três tabelas da aplicação (aquela que será entregue para a disciplina de banco de dados) para implementar.
+		-- Implementar as classes (entidades da aplicação).
+		-- Implementar as classes DAO para realizar as operações de banco de dados (inserir, pesquisar e alterar).
+
+A equipe deverá entregar para avaliação:
+		2. Projeto java.
+		3. Script de banco de dados.
+		4. Modelo de banco de dados (o mesmo que será entregue para a disciplina de banco de dados) 

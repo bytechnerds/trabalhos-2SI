@@ -8,12 +8,13 @@ import java.util.Properties;
 import br.fiap.utils.Leitor;
 
 public class Conexao {
-
 	private volatile static Connection connection;
 
+	// construtor privado (não permite instanciação externa)
 	private Conexao() {
 	}
 
+	// método para conectar e retornar a conexão
 	public static Connection conectar() {
 		if (connection == null) {
 			synchronized (Conexao.class) {

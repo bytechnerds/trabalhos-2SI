@@ -20,7 +20,7 @@ public class FormLogin {
 				break;
 			case 2:
 				int op2;
-				op2 = parseInt(showInputDialog("1. Cadastrar Novo Usuário \n 2. Fazer Login\n 3.Sair"));
+				op2 = parseInt(showInputDialog("1. Cadastrar Novo Usuário \n2. Fazer Login \n3.Sair"));
 				switch (op2) {
 				case 1:
 					FormUsuario.cadastroUsuario();

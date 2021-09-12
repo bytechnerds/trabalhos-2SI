@@ -18,26 +18,54 @@ public class UsuarioDAO {
 
 	public void cadastrarUsuario(Usuario u) {
 		connection = Conexao.conectar();
-		sql = "insert into awave_usuario(nome, email, senha, navegador, deficiencia_visual) values(?, ?, ?, ?, ?)";
+		sql = "insert into usuario(id_usuario, nome, email, senha, navegador, deficiencia_visual) values(?, ?, ?, ?, ?, ?)";
 
 		try {
 			ps = connection.prepareStatement(sql);
-			ps.setString(1, u.getNome());
-			ps.setString(2, u.getEmail());
-			ps.setString(3, u.getSenha());
-			ps.setString(4, u.getNavegador().name());
-			ps.setString(5, u.getDeficiencia_visual().name());
+			ps.setInt(1, u.getId_usuario());
+			ps.setString(2, u.getNome());
+			ps.setString(3, u.getEmail());
+			ps.setString(4, u.getSenha());
+			ps.setString(5, u.getNavegador().name());
+			ps.setString(6, u.getDeficiencia_visual().name());
 			ps.execute();
 		} catch (SQLException e) {
 			System.out.println("Erro ao inserir usuário!\n" + e);
 		}
 	}
 
+	public void alterarEmail(int id_usuario, String email) {
+		connection = Conexao.conectar();
+		sql = "update usuario set email = ? where id_usuario = ?";
+
+		try {
+			ps = connection.prepareStatement(sql);
+			ps.setString(1, email);
+			ps.setInt(2, id_usuario);
+			ps.execute();
+		} catch (SQLException e) {
+			System.out.println("Erro ao alterar email! \n" + e);
+		}
+	}
+
+	public void alterarSenha(int id_usuario, String senha) {
+		connection = Conexao.conectar();
+		sql = "update usuario set senha = ? where id_usuario = ?";
+
+		try {
+			ps = connection.prepareStatement(sql);
+			ps.setString(1, senha);
+			ps.setInt(2, id_usuario);
+			ps.execute();
+		} catch (SQLException e) {
+			System.out.println("Erro ao alterar senha! \n" + e);
+		}
+	}
 	// consultar cadastro
 	public boolean consultarCadastro(int id) {
 		boolean aux = false;
 		connection = Conexao.conectar();
-		sql = "select * from awave_usuario where id_usuario = ?";
+		sql = "select * from usuario where id_usuario = ?";
 		try {
 			ps = connection.prepareStatement(sql);
 			ps.setInt(1, id);
@@ -49,17 +77,18 @@ public class UsuarioDAO {
 		return aux;
 	}
 
-//Consultar por Nome
-	public Usuario consultarPorNomes(String nome) {
+	//consultar por id
+	public Usuario consultarPorId(int id_usuario) {
 		Usuario u = null;
+		
 		connection = Conexao.conectar();
-		sql = "select * from awave_usuario where nome = ?";
+		sql = "select * from usuario where id_usuario = ?";
 		try {
 			ps = connection.prepareStatement(sql);
-			ps.setString(1, nome);
+			ps.setInt(1, id_usuario);
 			rs = ps.executeQuery();
 			if (rs.next()) {
-				int id = rs.getInt("id");
+				String nome = rs.getString("nome");
 				String email = rs.getString("email");
 				String senha = rs.getString("senha");
 				TipoNavegador navegador;
@@ -92,25 +121,26 @@ public class UsuarioDAO {
 					deficiencia = TipoDeficiencia.DALTONISMO;
 				}
 
-				u = new Usuario(id, nome, email, senha, navegador, deficiencia);
+				u = new Usuario(id_usuario, nome, email, senha, navegador, deficiencia);
 			}
 		} catch (SQLException e) {
-			System.out.println("Erro ao consultar por nome:\n " + e);
+			System.out.println("Erro ao consultar por id:\n " + e);
 		}
 
 		return u;
 	}
 
-//Contar por Deficiência
-	public int contarDeficiencia() {
+	// Contar por Deficiência
+	public int contarDeficiencia(String deficiencia_visual) {
 		total = 0;
 		connection = Conexao.conectar();
-		sql = "select * from awave_usuario";
+		sql = "select * from usuario where deficiencia_visual = ?";
 
 		try {
 			ps = connection.prepareStatement(sql);
+			ps.setString(1, deficiencia_visual);
 			rs = ps.executeQuery();
-			if (rs.next())
+			while (rs.next())
 				total++;
 		} catch (SQLException e) {
 			System.out.println("Erro ao contar usuários por deficiência! \n" + e);
@@ -119,16 +149,17 @@ public class UsuarioDAO {
 		return total;
 	}
 
-//Contar por Navegador
-	public int contarNavegador() {
+	// Contar por Navegador
+	public int contarNavegador(String navegador) {
 		total = 0;
 		connection = Conexao.conectar();
-		sql = "select * from awave_usuario";
+		sql = "select * from usuario where navegador = ?";
 
 		try {
 			ps = connection.prepareStatement(sql);
+			ps.setString(1, navegador);
 			rs = ps.executeQuery();
-			if (rs.next())
+			while (rs.next())
 				total++;
 		} catch (SQLException e) {
 			System.out.println("Erro ao contar usuários por navegador! \n" + e);
