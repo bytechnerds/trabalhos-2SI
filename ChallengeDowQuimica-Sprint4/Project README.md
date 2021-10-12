@@ -1,4 +1,4 @@
-SPRINT 43 - OOP (CHALLENGE DOW QUÍMICA)
+SPRINT 4 - OOP (CHALLENGE DOW QUÍMICA)
 
 DESCIÇÃO DO TRABALHO:
 Elaboração de aplicação web; telas do sistema para interação dos usuários.
