@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Condensed&display=swap');
+
+body{
+     background-color: #131212; 
+     height: 100%;
+}
+
+.principal{
+  text-align: center;
+ 
+}
+
+.principal h1{
+    font-family:'Roboto Condensed', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.dados{
+    font-family:'Roboto Condensed', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+
+
+
+.campo input{
+    width: 430.6px;
+    height: 68.25px;
+    background: rgba(41, 124, 116, 0.03);
+    border: 2.00744px solid #838383;
+    box-sizing: border-box;
+    border-radius: 10.0372px;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #C4C4C4;
+}
+
+.form_input:focus{
+    border: 2.00744px solid #62F8E9;
+    box-shadow: 0px 4.52859px 37.3608px #62F8E9;
+}
+
+
+.botao{
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 117%;
+background: none;
+border: none;
+letter-spacing: 0.05em;
+margin-top: 20px;
+color: #FFFFFF;
+cursor: pointer;
+} 
+ 
+.botao{
+    width: 430.6px;
+    height: 68.25px;
+    left: 465px;
+    top: 400px;
+    background: linear-gradient(
+92.31deg
+, #24CE85 -1.09%, #329A90 -1.08%, #24CE85 99.69%);
+    border-radius: 6.33495px;
+    text-align: center;
+}
+
+
+.botoes {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.botoes-2 {
+  display: inline-block;
+}
+
+button {
+  width: 193.85px;
+  height: 65px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.5243px;
+  line-height: 117%;
+  background: none;
+  border: none;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-align: center;
+  width: 335.42px;
+  height: 65px;
+  left: 326px;
+  top: 305px;
+  display: list-item;
+  background: linear-gradient(
+    92.31deg,
+    #24ce85 -1.09%,
+    #329a90 -1.08%,
+    #24ce85 99.69%
+  );
+  border-radius: 23.8967px 23.8967px 23.8967px 0px;
+}
+
+.botoes-2 button:last-child {
+  width: 193.85px;
+  height: 65px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.52px;
+  line-height: 117%;
+  /* or 20px */
+  letter-spacing: 0.05em;
+  color: #000000;
+  background: none;
+  border: none;
+  text-align: center;
+  width: 335.42px;
+  height: 65px;
+  left: 326px;
+  top: 305px;
+  display: list-item;
+  background: #ffffff;
+  border-radius: 23.8967px 23.8967px 23.8967px 0px;
+}
+
+p{
+    font-family: Poppins;
+font-style: italic;
+font-weight: normal;
+font-size: 18.0669px;
+line-height: 27px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #C4C4C4;
+}
+
+.formulario input{
+    width: 430.6px;
+    height: 68.25px;
+    background: rgba(41, 124, 116, 0.03);
+    border: 2.00744px solid #838383;
+    box-sizing: border-box;
+    border-radius: 10.0372px;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: #C4C4C4;
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Condensed&display=swap");
+
+body {
+  background-color: #131212;
+  height: 100%;
+}
+
+.principal {
+  text-align: center;
+}
+
+.principal h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 117%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+}
+
+p {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18.0669px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #c4c4c4;
+}
+
+.botoes {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.botoes-2 {
+  display: inline-block;
+}
+
+button {
+  width: 193.85px;
+  height: 65px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.5243px;
+  line-height: 117%;
+  background: none;
+  border: none;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-align: center;
+  width: 335.42px;
+  height: 65px;
+  left: 326px;
+  top: 305px;
+  display: list-item;
+  background: linear-gradient(
+    92.31deg,
+    #24ce85 -1.09%,
+    #329a90 -1.08%,
+    #24ce85 99.69%
+  );
+  border-radius: 23.8967px 23.8967px 23.8967px 0px;
+}
+
+.botoes-2 button:last-child {
+  width: 193.85px;
+  height: 65px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.52px;
+  line-height: 117%;
+  /* or 20px */
+  letter-spacing: 0.05em;
+  color: #000000;
+  background: none;
+  border: none;
+  text-align: center;
+  width: 335.42px;
+  height: 65px;
+  left: 326px;
+  top: 305px;
+  display: list-item;
+  background: #ffffff;
+  border-radius: 23.8967px 23.8967px 23.8967px 0px;
+}

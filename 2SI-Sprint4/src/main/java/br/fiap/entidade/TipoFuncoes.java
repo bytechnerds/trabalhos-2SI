@@ -1,0 +1,5 @@
+package br.fiap.entidade;
+
+public enum TipoFuncoes {
+	DESCREVER, NARRAR, NAVEGARBLOCOS, NAVEGARBOTÕES, NAVEGARMÍDIA, NAVEGARIMAGEM, NAVEGARENTRADAS;
+}

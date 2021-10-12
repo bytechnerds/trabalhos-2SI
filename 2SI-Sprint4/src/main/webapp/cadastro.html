@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro</title>
+<link rel="stylesheet" href="stylecadastro.css">
+<link rel="stylesheet" href="app.js">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+	<div class="principal">
+		<h1>CADASTRAR</h1>
+		<div class="formulario">
+			<form action="cadastro" id="cadastro" method="post">
+				<label for="name"></label><br> 
+				<input type="text" id="name" class="form_input" name="name" placeholder="Nome Completo"><br>
+				<label for="email"></label><br> 
+				<input type="text" id="email" class="form_input" name="email" placeholder="Email"> <br>
+				<label for="password"></label><br> 
+				<input type="password" id="password" class="form_input" name="password" placeholder="Senha"> <br>
+				<select name="deficiencia" id="deficiencia" class="formulario">
+					<option value="placeholder" selected>Deficiência</option>
+					<option value="CEGUEIRA">CEGUEIRA</option>
+					<option value="BAIXAVISAO">BAIXA VISÃO</option>
+					<option value="DALTONISMO">DALTONISMO</option>
+				</select> <br>
+				<select name="navegador" id="navegador"	class="formulario">
+					<option value="placeholder" selected>Navegador Padrão</option>
+					<option value="CHROME">CHROME</option>
+					<option value="FIREFOX">FIREFOX</option>
+					<option value="EDGE">EDGE</option>
+					<option value="OPERA">OPERA</option>
+					<option value="SAFARI">SAFARI</option>
+					<option value="BRAVE">BRAVE</option>
+					<option value="INTERNETEXPLORER">INTERNETEXPLORER</option>
+				</select><br>
+
+				<div class="botao">
+					<button type="submit" value="Gravar" form="cadastro">CRIAR
+						CONTA</button>
+				</div>
+			</form>
+		</div>
+		<p>
+			Já tem uma conta?<a href="login.html">Entre aqui</a>
+		</p>
+
+	</div>
+
+
+
+</body>
+
+</html>
