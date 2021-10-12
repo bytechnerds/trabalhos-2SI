@@ -15,7 +15,7 @@
 		<p>Selecione uma opção</p>
 
 		<div class="botoes">
-			<form action="administrar" id="painelAdmin" method="post">
+			<form action="paginaAdmin" id="paginaAdmin" method="post">
 				<button type="submit" id="consultarUsuario" name="consultarUsuario">Consultar
 					usuário</button>
 				<br>

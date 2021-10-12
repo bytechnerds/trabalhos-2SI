@@ -9,7 +9,6 @@ public class Sessao {
 	private int duracao;
 	private String funcoes;
 	private int id_site;
-	private int id_usuario;
 
 //	public Sessao(int id_sessao, Date data_acesso, int duracao, String funcoes) {
 //		this.id_sessao = id_sessao;
@@ -18,13 +17,12 @@ public class Sessao {
 //		this.funcoes = funcoes;
 //	}
 
-	public Sessao(int id_sessao, Date data_acesso, int duracao, String funcoes, int id_site, int id_usuario) {
+	public Sessao(int id_sessao, Date data_acesso, int duracao, String funcoes, int id_site) {
 		this.id_sessao = id_sessao;
 		this.data_acesso = data_acesso;
 		this.duracao = duracao;
 		this.funcoes = funcoes;
 		this.id_site = id_site;
-		this.id_usuario = id_usuario;
 	}
 
 	public int getId_sessao() {
@@ -102,14 +100,11 @@ public class Sessao {
 		this.id_site = id_site.getId_site();
 	}
 
-	public int getId_usuario() {
-		return id_usuario;
-	}
-
-	public void setId_usuario(Usuario id_usuario) {
+	public int setFuncNumber() {
+		Random random = new Random();
+		int cont = random.nextInt(50);
 		
-		this.id_usuario = id_usuario.getId_usuario();
-		
+		return cont;
 	}
 
 }

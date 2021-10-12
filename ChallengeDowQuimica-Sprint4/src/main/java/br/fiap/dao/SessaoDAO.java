@@ -50,9 +50,8 @@ public class SessaoDAO {
 				int duracao = rs.getInt("duracao");
 				String funcoes = rs.getString("funcoes");
 				int id_site = rs.getInt("sites_id_site");
-				int id_usuario = rs.getInt("usuario_id_usuario");
 			
-				s = new Sessao(id_sessao, data_acesso, duracao, funcoes, id_site, id_usuario);
+				s = new Sessao(id_sessao, data_acesso, duracao, funcoes, id_site);
 			}
 			
 		} catch (SQLException e) {
