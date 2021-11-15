@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
 import br.fiap.conexao.Conexao;
 import br.fiap.entidade.Usuario;
 import br.fiap.entidade.TipoDeficiencia;
@@ -61,6 +64,7 @@ public class UsuarioDAO {
 			System.out.println("Erro ao alterar senha! \n" + e);
 		}
 	}
+
 	// consultar cadastro
 	public boolean consultarCadastro(int id) {
 		boolean aux = false;
@@ -77,10 +81,10 @@ public class UsuarioDAO {
 		return aux;
 	}
 
-	//consultar por id
+	// consultar por id
 	public Usuario consultarPorId(int id_usuario) {
 		Usuario u = null;
-		
+
 		connection = Conexao.conectar();
 		sql = "select * from usuario where id_usuario = ?";
 		try {

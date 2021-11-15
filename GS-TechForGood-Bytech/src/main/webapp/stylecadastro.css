@@ -1,0 +1,101 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Condensed&display=swap')
+	;
+
+body {
+	height: 100%;
+}
+
+.principal {
+	text-align: center;
+}
+
+.principal h1 {
+	font-family: 'Righteous', sans-serif;;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	line-height: 117%;
+	text-align: center;
+	letter-spacing: 0.07em;
+	color: #009EE2;
+}
+
+.form_input {
+	width: 430.6px;
+	height: 68.25px;
+	border: 2.00744px solid #838383;
+	box-sizing: border-box;
+	background-color: transparent;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 27px;
+	letter-spacing: 0.1em;
+}
+
+.form_input:focus {
+	border: 2.00744px solid #62F8E9;
+	box-shadow: 0px 4.52859px 37.3608px #009EE2;
+}
+
+.form_radio{
+	box-sizing: border-box;
+	background-color: transparent;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 27px;
+	letter-spacing: 0.1em;
+	color: #464646;
+	
+}
+
+.botao button {
+	width: 186px;
+	height: 24px;
+	left: 587px; top : 618px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 117%;
+	background: none;
+	border: none;
+	letter-spacing: 0.05em;
+	margin-top: 20px;
+	color: #FFFFFF;
+	cursor: pointer;
+	top: 618px;
+}
+
+.botao {
+	width: 430.6px;
+	height: 60px;
+	background: #009EE2;
+	margin-left: 450px;
+	margin-top: 30px;
+}
+
+p {
+	font-family: Poppins;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18.0669px;
+	line-height: 27px;
+	/* identical to box height */
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #464646;
+}
+
+a {
+	text-decoration: none;
+	color: #009EE2;
+	font-weight: bold;
+}
