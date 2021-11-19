@@ -6,15 +6,13 @@ public class Voluntario {
 	private int id;
 	private String nome;
 	private int cpf;
-	private String endereco;
 	private String email;
 	private String senha;
-	
-	public Voluntario(int id, String nome, int cpf, String endereco, String email, String senha) {
+
+	public Voluntario(int id, String nome, int cpf, String email, String senha) {
 		this.id = id;
 		this.nome = nome;
 		this.cpf = cpf;
-		this.endereco = endereco;
 		this.email = email;
 		this.senha = senha;
 	}
@@ -45,14 +43,6 @@ public class Voluntario {
 		this.cpf = cpf;
 	}
 
-	public String getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -68,6 +58,5 @@ public class Voluntario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
-	
+
 }

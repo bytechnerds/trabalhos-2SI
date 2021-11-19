@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadastro</title>
+<title>Nova Ação</title>
 <link rel="stylesheet" href="stylecadastro.css">
 <link rel="stylesheet" href="app.js">
 <link rel="stylesheet"
@@ -14,23 +14,18 @@
 
 <body>
 	<div class="principal">
-		<h1 class="titulo">novo cadastro</h1>
+		<h1>confirme seu ID</h1>
 		<div class="formulario">
-
-			<div class="botao">
-				<a href="cadastroParceiro.html">
-					<button type="submit">Parceiro</button>
-				</a><a href="cadastroVoluntario.html">
-					<button type="submit">Voluntário</button>
-				</a>
-			</div>
+			<form action="listaracao" id="listaracao" method="post">
+				<input type="text" id="id" class="form_input" name="id"
+					placeholder="Confirme o ID"><br> <br>
+				<div class="botao">
+					<button type="submit" value="Gravar" form="listaracao">CONFIRMAR</button>
+				</div>
+			</form>
 		</div>
-		<p>
-			Já tem uma conta?<a href="login.html"> Entre aqui</a>
-		</p>
 
 	</div>
 
 </body>
-
 </html>

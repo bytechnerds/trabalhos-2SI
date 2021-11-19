@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doação de Alimentos</title>
+<link rel="stylesheet" href="stylecadastro.css">
+</head>
+<body>
+
+	<div class="principal">
+		<h1>doar alimentos</h1>
+		<div class="formulario">
+			<form action="doaralimentos" id="doaralimentos" method="post">
+				<select name="tipo" id="tipo" class="formulario">
+					<option value="placeholder" selected>ALIMENTOS</option>
+					<option value="CESTASIMPLES">CESTA BÁSICA SIMPLES</option>
+					<option value="CESTACOMPLETA">CESTA BÁSICA COMPLETA</option>
+					<option value="ARROZ">ARROZ</option>
+					<option value="FEIJAO">FEIJÃO</option>
+					<option value="OLEO">ÓLEO</option>
+					<option value="SAL">SAL</option>
+				</select> <br> <br> <label for="cnpj" class="form_label">Digite
+					o CNPJ da instituição</label><br> <input type="text" id="cnpj"
+					class="form_input" name="cnpj" placeholder="1234567890001">
+				<br> <br> <label for="quantidade" class="form_label">Digite
+	a Quantidade</label><br> <input type="text" id="quantidade"
+					class="form_input" name="quantidade" placeholder="ex: 1">
+				<div class="botao">
+					<button type="submit" value="doaralimentos">DOAR</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.image {
+	position: absolute;
+	width: 256px;
+	height: 256px;
+	left: 512px;
+	top: 161px;
+}
+
+.output {
+	position: absolute;
+	width: 573px;
+	height: 161px;
+	left: 353px;
+	top: 459px;
+	font-family: Righteous;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 67.9983px;
+	line-height: 84px;
+	text-align: center;
+	color: #008BC7;
+}
+
+.quote {
+	position: absolute;
+width: 540px;
+height: 76px;
+left: 370px;
+top: 652px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 22.2274px;
+line-height: 29px;
+text-align: center;
+
+margin-top:50px;
+}
+
+
+
+.card{
+	border: 2px solid #008BC7;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.dado{
+	font-family: Righteous;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+.outputLista {
+	width: 573px;
+	height: 161px;
+	left: 353px;
+	top: 459px;
+	font-family: Righteous;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 67.9983px;
+	line-height: 84px;
+	text-align: center;
+	color: #008BC7;
+}

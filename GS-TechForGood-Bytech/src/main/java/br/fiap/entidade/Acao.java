@@ -6,18 +6,19 @@ public class Acao {
 	private int id;
 	private String titulo;
 	private String descricao;
-	private String tag;
-	private int duracao;
+	private String duracao;
 	private int cnpjInstituicao;
 	private int inscritos;
+	private TipoTag tipoTag;
 
-	public Acao(int id, String titulo, String descricao, String tag, int duracao, int cnpjInstituicao, int inscritos) {
+	public Acao(int id, String titulo, String descricao, String duracao, int cnpjInstituicao, int inscritos,TipoTag tipoTag) {
 		this.id = id;
 		this.titulo = titulo;
 		this.descricao = descricao;
 		this.duracao = duracao;
 		this.cnpjInstituicao = cnpjInstituicao;
 		this.inscritos = inscritos;
+		this.tipoTag = tipoTag;
 	}
 
 	public int getId() {
@@ -45,20 +46,13 @@ public class Acao {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
-	public String getTag() {
-		return tag;
-	}
 
-	public void setTag(String tag) {
-		this.tag = tag;
-	}
 
-	public int getDuracao() {
+	public String getDuracao() {
 		return duracao;
 	}
 
-	public void setDuracao(int duracao) {
+	public void setDuracao(String duracao) {
 		this.duracao = duracao;
 	}
 
@@ -78,4 +72,11 @@ public class Acao {
 		this.inscritos = inscritos;
 	}
 
+	public TipoTag getTipoTag() {
+		return tipoTag;
+	}
+
+	public void setTipoTag(TipoTag tipoTag) {
+		this.tipoTag = tipoTag;
+	}
 }

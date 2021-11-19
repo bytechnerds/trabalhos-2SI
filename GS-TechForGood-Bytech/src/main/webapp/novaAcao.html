@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Ação</title>
+<link rel="stylesheet" href="stylecadastro.css">
+<link rel="stylesheet" href="app.js">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+	<div class="principal">
+		<h1>nova ação</h1>
+		<div class="formulario">
+			<form action="criaracao" id="criaracao" method="post">
+				<input type="text" id="titulo" class="form_input" name="titulo"
+					placeholder="Título"><br> <input type="text"
+					id="duracao" class="form_input" name="duracao"
+					placeholder="Duração (em dias)"> <br> <input
+					type="text" id="descricao" class="form_input" name="descricao"
+					placeholder="Descrição"> <br> <br> <select
+					name="tag" id="tag" class="formulario">
+					<option value="placeholder" selected>TAGS</option>
+					<option value="CRIANCAS">CRIANÇAS</option>
+					<option value="MULHERES">MULHERES</option>
+					<option value="FAMILIAS">FAMÍLIAS</option>
+					<option value="SEMTETO">PESSOAS EM SITUAÇÃO DE RUA</option>
+					<option value="BAIXARENDA">PESSOAS EM SITUAÇÃO DE BAIXA
+						RENDA</option>
+				</select> <br> <br> <input type="text" id="cnpj" class="form_input"
+					name="cnpj" placeholder="Por favor, confirme o CNPJ da Instituição">
+
+
+				<div class="botao">
+					<button type="submit" value="Gravar" form="criaracao">CADASTRAR
+						AÇÃO</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>

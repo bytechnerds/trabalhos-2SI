@@ -1,6 +1,6 @@
 package br.fiap.entidade;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Parceiro {
@@ -10,10 +10,10 @@ public class Parceiro {
 	private String endereco;
 	private String email;
 	private String senha;
-	private ArrayList<Acao> acoes;
+	private List<Acao> acoes;
 	private boolean centroDeColeta;
 	
-	public Parceiro(int id, String nome, int cnpj, String endereco, String email, String senha, ArrayList<Acao> acoes,
+	public Parceiro(int id, String nome, int cnpj, String endereco, String email, String senha, List<Acao> acoes,
 			boolean centroDeColeta) {
 		this.id = id;
 		this.nome = nome;
@@ -75,11 +75,11 @@ public class Parceiro {
 		this.senha = senha;
 	}
 
-	public ArrayList<Acao> getAcoes() {
+	public List<Acao> getAcoes() {
 		return acoes;
 	}
 
-	public void setAcoes(ArrayList<Acao> acoes) {
+	public void setAcoes(List<Acao> acoes) {
 		this.acoes = acoes;
 	}
 

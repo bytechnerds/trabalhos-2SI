@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadastro</title>
+<title>Remover Ação</title>
 <link rel="stylesheet" href="stylecadastro.css">
 <link rel="stylesheet" href="app.js">
 <link rel="stylesheet"
@@ -14,23 +14,24 @@
 
 <body>
 	<div class="principal">
-		<h1 class="titulo">novo cadastro</h1>
+		<h1>remover ação</h1>
 		<div class="formulario">
+			<form action="removeracao" id="removeracao" method="post">
+					<label for="id" class="form_label">Digite o ID da Ação</label><br> 
+					<input
+					type="text" id="id" class="form_input" name="idAcao"
+					placeholder="Id da Ação"> 
+					<br> <br> 
 
-			<div class="botao">
-				<a href="cadastroParceiro.html">
-					<button type="submit">Parceiro</button>
-				</a><a href="cadastroVoluntario.html">
-					<button type="submit">Voluntário</button>
-				</a>
-			</div>
+
+				<div class="botao">
+					<button type="submit" value="Gravar" form="removeracao">REMOVER
+						AÇÃO</button>
+				</div>
+			</form>
 		</div>
-		<p>
-			Já tem uma conta?<a href="login.html"> Entre aqui</a>
-		</p>
 
 	</div>
 
 </body>
-
 </html>

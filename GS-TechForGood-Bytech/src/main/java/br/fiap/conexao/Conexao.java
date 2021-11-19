@@ -9,8 +9,8 @@ public class Conexao {
 	private volatile static Connection connection;
 	private static String driver = "oracle.jdbc.driver.OracleDriver";
 	private static String url = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-	private static String user = "";
-	private static String password = "";
+	private static String user = "rm86065";
+	private static String password = "220897";
 
 	// construtor privado (não permite instanciação externa)
 	private Conexao() {

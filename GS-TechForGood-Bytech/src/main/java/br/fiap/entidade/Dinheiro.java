@@ -3,8 +3,8 @@ package br.fiap.entidade;
 public class Dinheiro extends Doacao{
 	private double valor;
 	
-	public Dinheiro(int cpnjInstituicao, double valor) {
-		super(cpnjInstituicao);
+	public Dinheiro(int idTransacao, int cpnjInstituicao, double valor) {
+		super(idTransacao, cpnjInstituicao);
 		this.valor = valor;
 	}
 

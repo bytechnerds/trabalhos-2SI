@@ -4,8 +4,8 @@ public class Alimento extends Doacao{
 	private double quantidade;
 	private TipoAlimentos alimento;
 	
-	public Alimento(int cpnjInstituicao, double quantidade, TipoAlimentos alimento) {
-		super(cpnjInstituicao);
+	public Alimento(int idTransacao,double quantidade,  int cpnjInstituicao, TipoAlimentos alimento) {
+		super(idTransacao, cpnjInstituicao);
 		this.quantidade = quantidade;
 		this.alimento = alimento;
 	}

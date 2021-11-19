@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro</title>
+<link rel="stylesheet" href="stylecadastro.css">
+<link rel="stylesheet" href="app.js">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+	<div class="principal">
+		<h1 class="titulo">novo cadastro</h1>
+		<h3>cadastro de Voluntário</h3>
+		<div class="formulario">
+			<form action="cadastrovoluntario" id="cadastrovoluntario"
+				method="post">
+				<input type="text" id="nome" class="form_input" name="nome"
+					placeholder="Nome Completo"><br> <br> <input
+					type="text" id="documento" class="form_input" name="documento"
+					placeholder="CPF"><br> <br> <input type="text"
+					id="email" class="form_input" name="email" placeholder="Email">
+				<br> <br> <input type="password" id="password"
+					class="form_input" name="password" placeholder="Senha"> <br>
+				<br>
+
+				<div class="botao">
+					<button type="submit" value="Gravar" form="cadastrovoluntario">CRIAR
+						CONTA</button>
+				</div>
+			</form>
+		</div>
+		<p>
+			Já tem uma conta?<a href="login.html"> Entre aqui</a>
+		</p>
+
+	</div>
+
+</body>
+
+</html>

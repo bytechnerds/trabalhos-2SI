@@ -1,0 +1,89 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto+Condensed&display=swap")
+	;
+
+body {
+	height: 100%;
+}
+
+.principal {
+	text-align: center;
+}
+
+.principal h1 {
+	font-family: "Righteous", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 60px;
+	line-height: 117%;
+	text-align: center;
+	letter-spacing: 0.07em;
+	color: #009EE2;
+}
+.principal h2 {
+	font-family: 'Righteous', sans-serif;;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 117%;
+	text-align: center;
+	letter-spacing: 0.07em;
+	color: #009EE2;
+}
+.principal h3 {
+	font-family: 'Righteous', sans-serif;;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 117%;
+	text-align: center;
+	letter-spacing: 0.07em;
+	color: #009EE2;
+}
+
+.principal a{
+		text-decoration: none;
+}
+
+p {
+	font-family: Poppins;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 27px;
+	/* identical to box height */
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.botoes {
+	display: inline-block;
+}
+
+button {
+	width: 193.85px;
+	height: 65px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17.5243px;
+	line-height: 117%;
+	background: none;
+	border: 3px solid #009EE2;
+	letter-spacing: 0.05em;
+	color: #009EE2;
+	text-align: center;
+	width: 335.42px;
+	height: 65px;
+	left: 326px;
+	top: 305px;
+	display: list-item;
+}
+
+button:hover{
+	background: #009EE2;	
+	color: #ffffff;
+}
